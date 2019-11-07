@@ -19,11 +19,12 @@ gererNiveis = function(){
     vetorNiveis.push(" Ruim");
     vetorValores.push(ruim)
 
-    let muitoRuim = 100 -  muitoBom - bom - regular - ruim + 1; 
+    let muitoRuim = 100 -  muitoBom - bom - regular - ruim + 1;
     vetorNiveis.push(" Muito Ruim")
     vetorValores.push(muitoRuim)
-   
+
     return {vetorNiveis, vetorValores};
+
 
 
     }
@@ -40,7 +41,8 @@ gererNiveis = function(){
                 labels: ['Muito bom', 'Bom', 'Regular','Ruim' , 'Muito Ruim'],
                 datasets: [{
                     label: 'Satisfação dos Alunos',
-                    data: avaliacaoGrafico1.vetorValores,
+                    //data: avaliacaoGrafico1.vetorValores,
+                     data: [12, 12, 12, 12, 12, 12],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
