@@ -8,12 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 
-
     <title>Trabalho</title>
 </head>
-<body>
-       <canvas id="myChart" width="40" height="10"></canvas><hr><hr>
-        <canvas id="myChart2" width="40" height="10"></canvas><hr><hr>
-        <canvas id="myChart3" width="40" height="10"></canvas>s
+<body onload="initAlunos()">
+
+<div style="height: 300px; width: 1000px;">
+
+    <div id="1" style="position: relative;height: 400px; width:400px">
+        <canvas id="grafico_1"></canvas>
+    </div>
+
+    <div id="2" style="position: relative;height: 400px; width:400px">
+        <canvas id="grafico_2"></canvas>
+    </div>
+
+    <div id="3" style="position: relative;height: 400px; width:400px">
+        <canvas id="grafico_3"></canvas>
+    </div>
+
+</div>
+
 </body>
 </html>
