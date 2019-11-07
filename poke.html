@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+        let vetorTipos;
+        fetch ("https://pokeapi.co/api/v2/type",{
+        method: 'GET',
+        mode:'cors'}).then(resposta => {
+              if(resposta){
+              resposta.json().then(dados =>{
+               console.log(dados);
+             vetorTipos = dados.results;
+            vetorTipos.forEach(tipo => {
+            console.log(tipo.name+'/'+tipo.url);
+        })
+              }).catch(err => {
+            console.log(err);
+              })
+              }else{
+        console.log("erro ao retorna tipos de pokemom");
+               }
+        }).catch(err => { 
+          console.log(err);
+        })
+    </script>
+</body>
+</html>
