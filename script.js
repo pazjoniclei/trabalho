@@ -47,14 +47,14 @@ function initAlunos() {
     //inicia o aluno
     for (i = 0; i < total_alunos; i++) {
         //sorteia um numero entre 0 e 4 > posicao do array 'nivel_satisfacao'
-        let n_satisfacao = Math.floor(Math.random() * 4);
+        let n_satisfacao = Math.floor(Math.random() * 11);
 
         aluno = 'aluno_'+i;
 
         //atribuir o nivel_satisfacao
         aluno.nivel_satisfacao = nivel_satisfacao[n_satisfacao];
 
-        //aluno.nota = Math.floor(Math.random() * 10);
+        aluno.nota = Math.floor(Math.random() * 11);
     }
 
 

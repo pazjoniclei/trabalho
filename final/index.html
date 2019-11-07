@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+    <title>Trabalho</title>
+    <style>
+    * {
+  box-sizing: border-box;
+    }
+
+    .box {        
+    position: relative;
+    float: left;
+    width: 30%;
+    padding: 20px;
+    margin: 5px;
+    height: auto;
+    background-color: #f7f7f7;
+    top: 29px;
+    border-radius: 15px;
+    }
+
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    </style>
+</head>
+<body onload="initAlunos()">
+    <div class="clearfix">
+        <div class="box" id="d_1">
+            <canvas id="gr_satisfacao"></canvas>
+        </div>
+
+        <div class="box" id="d_2">
+            <canvas id="gr_media_alunos"></canvas>
+        </div>
+
+        <div class="box" id="d_3">
+            <canvas id="gr_percentual_aprovacao"></canvas>
+        </div>
+    </div>
+</body>
+</html>
